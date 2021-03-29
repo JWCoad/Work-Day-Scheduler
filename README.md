@@ -4,7 +4,7 @@
 
 ### Live at [Git Pages](https://jwcoad.github.io/Work-Day-Scheduler/)
 ### Repo at [Github](https://github.com/JWCoad/Work-Day-Scheduler)
-### Screenshot of page [Screenshot](https://github.com/JWCoad/Work-Day-Scheduler/blob/main/assets/images/screenshot.JPG)
+### Screenshot of page ![Screenshot](https://github.com/JWCoad/Work-Day-Scheduler/blob/main/assets/images/screenshot.JPG)
 
 
 ## Resources used:
