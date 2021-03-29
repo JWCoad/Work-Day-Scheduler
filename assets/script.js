@@ -20,13 +20,13 @@ $(document).ready(function () {
             const row = $("<div>").addClass("row");
 
             // Color change based on time
-            let classOfHour = "";
+            let timeColor = "";
             if (today.isBefore(rowTime, "hour")) {
-                classOfHour = "future"
+                timeColor = "future"
             } else if (today.isAfter(rowTime, "hour")) {
-                classOfHour = "past"
+                timeColor = "past"
             } else {
-                classOfHour = "present"
+                timeColor = "present"
             };
 
             calendar.append(row);
@@ -34,7 +34,7 @@ $(document).ready(function () {
             row.append($("<div>").addClass("col-2 hour").text(rowTime.format("h A")));
 
             let timeBlock = rowTime.format("hA");
-            row.append($("<textarea>").addClass(`col-8 ${classOfHour}`).text(calClick[timeBlock]));
+            row.append($("<textarea>").addClass(`col-8 ${timeColor}`).text(calClick[timeBlock]));
 
             row.append($("<button>").addClass("col-2 saveBtn").html("<i class='fas fa-save'></i>").attr("aria-label", "Save").attr("id", rowTime.format("hA")));
 
@@ -47,8 +47,8 @@ $(document).ready(function () {
     };
 
 
-
-    function initCalendar() {
+    // Launch function
+    function launchScheduler() {
         const today = moment();
         currentDay.text(today.format('LL'));
         createScheduler(today, calClick);
@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     // On load preform:
     loadSave();
-    initCalendar();
+    launchScheduler();
     changeColor();
 
 
@@ -72,7 +72,7 @@ $(document).ready(function () {
     function changeColor() {
         const checkRealTime = setInterval(function () {
             if (moment().isAfter(refreshCheck, "minute")) {
-                initCalendar();
+                launchScheduler();
             }
         }, 50000);
     };
