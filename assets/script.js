@@ -1,0 +1,1 @@
+$("#currentDay").text(now.format("dddd, Do MMMM"));
