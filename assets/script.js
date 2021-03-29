@@ -14,7 +14,7 @@ $(document).ready(function () {
         const calendar = $("div.container");
         calendar.empty();
 
-        // Creat sufficent tables
+        // Create sufficent tables
         for (let i = 1; i < 10; i++) {
 
             const row = $("<div>").addClass("row");
