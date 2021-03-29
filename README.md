@@ -7,7 +7,7 @@
 ### Screenshot of page ![Screenshot](https://github.com/JWCoad/Work-Day-Scheduler/blob/main/assets/images/screenshot.JPG)
 
 
-## Resources used:
+### Resources used:
 ### [W3 School](https://www.w3schools.com)
 ### [JQuery](https://jquery.com/)
 ### [MomentJS](https://momentjs.com/)

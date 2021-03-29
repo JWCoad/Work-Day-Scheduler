@@ -8,7 +8,7 @@ $(document).ready(function () {
     var refreshCheck = moment();
 
     // Create table 
-    function createSceduler(today, calClick) {
+    function createScheduler(today, calClick) {
 
         let rowTime = moment(today).hour(9);
         const calendar = $("div.container");
@@ -51,7 +51,7 @@ $(document).ready(function () {
     function initCalendar() {
         const today = moment();
         currentDay.text(today.format('LL'));
-        createSceduler(today, calClick);
+        createScheduler(today, calClick);
     };
 
     // Call saved content
